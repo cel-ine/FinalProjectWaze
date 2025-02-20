@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #14cdff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <AnchorPane fx:id="loginpane" layoutX="225.0" layoutY="75.0" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.3, 0, 0); -fx-background-radius: 20px;">
+         <children>
+            <Button fx:id="SignInButton" layoutX="151.0" layoutY="248.0" mnemonicParsing="false" onAction="#LoginButtonHandler" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #0095FF;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Button>
+            <TextField fx:id="SignUpUsernameTF" layoutX="127.0" layoutY="134.0" prefHeight="30.0" prefWidth="147.0" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: lightgrey; -fx-border-radius: 8px4; -fx-padding: 5px;" />
+            <Label alignment="CENTER" layoutX="40.0" layoutY="48.0" prefHeight="43.0" prefWidth="271.0" text="Welcome to Waze!">
+               <font>
+                  <Font name="Segoe UI Black" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="141.0" text="Username:">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font></Label>
+            <Label layoutX="58.0" layoutY="196.0" prefHeight="22.0" prefWidth="60.0" text="Password:" />
+            <Button fx:id="SignUpButton" layoutX="183.0" layoutY="299.0" mnemonicParsing="false" onAction="#createbuttonhandler" prefHeight="23.0" prefWidth="62.0" style="-fx-background-color: transparent; -fx-underline: true;" text="Sign up" textFill="#0095ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="115.0" layoutY="303.0" text="No account? ">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font></Label>
+            <Label layoutX="105.0" layoutY="91.0" text="Sign in your Waze account">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="SignUpPwTF" layoutX="127.0" layoutY="193.0" style="-fx-background-color: white; -fx-border-color: lightgrey; -fx-background-radius: 5px; -fx-border-radius: 8px4px; -fx-padding: 5px;" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgpane" fitHeight="115.0" fitWidth="129.0" layoutX="340.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/FINALINTRO_ICON.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
